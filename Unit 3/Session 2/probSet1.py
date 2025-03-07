@@ -18,7 +18,7 @@ def remove_duplicates(nums):
     i = 0
     while i < len(nums) - 1:
         if nums[i] == nums[i+1]:
-            nums.pop(nums[i])
+            nums.pop(nums[i + 1])
         else:
             i+=1
     return nums
