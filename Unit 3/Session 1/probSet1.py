@@ -8,8 +8,7 @@
 #5 mississipi
 def count_mississippi(limit):
     for num in range(1, limit):
-        print( f"{num} mississippi")
-
+     print( f"{num} mississippi")
 count_mississippi(6)
 
 # Problem 2
@@ -46,6 +45,7 @@ def reverse_string(my_str):
     return my_str[::-1]
 
 print(reverse_string('boat'))
+
 
 # Problem 5
 
