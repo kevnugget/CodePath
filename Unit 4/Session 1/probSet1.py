@@ -20,9 +20,7 @@ def reverse_list(lst):
     start_index = 0
     end_index = -1
     while start_index != int(len(lst)/2): # O(n/2) -> O(n)
-        temp = lst[start_index]
-        lst[start_index] = lst[end_index]
-        lst[end_index] = temp
+        lst[start_index], lst[end_index] = lst[end_index], lst[start_index]
 
         start_index+=1
         end_index-=1
