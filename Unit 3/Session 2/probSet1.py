@@ -18,7 +18,7 @@ def remove_duplicates(nums):
     i = 0
     while i < len(nums) - 1:
         if nums[i] == nums[i+1]:
-            nums.pop(nums[i + 1])
+            nums.pop(i)
         else:
             i+=1
     return nums
@@ -53,12 +53,12 @@ print(reversed_s)
 # Write a function that returns the length of the longest substring that contains the same singular character
 def longest_uniform_substring(s):
     max_occurences = 1
-    count = 0
+    occurrences = 0
     for i in range(len(s) - 1):
         if s[i] == s[i+1]:
-            count += 1
+            occurrences += 1
         else:
-            max_occurences = max(max_occurences, count)
+            max_occurences = max(max_occurences, occurrences)
     return max_occurences
 
 s1 = "aabbbbCdAA"
