@@ -18,15 +18,15 @@ print(is_prime(2))
 # Write a function that reverses a list's elements IN-PLACE
 def reverse_list(lst):
     start_index = 0
-    end_index = -1
-    while start_index != int(len(lst)/2): # O(n/2) -> O(n)
+    end_index = int(len(lst)) - 1
+    while start_index < end_index / 2: # O(n/2) -> O(n)
         lst[start_index], lst[end_index] = lst[end_index], lst[start_index]
 
         start_index+=1
         end_index-=1
     return lst
 
-lst = [1, 2, 3, 4, 5, 6]
+lst = [1, 2, 3, 4, 5, 6, 7]
 print(reverse_list(lst))
 
 # Prob 3
