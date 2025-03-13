@@ -100,7 +100,7 @@ def remove_duplicates(nums):
         if nums[j] != nums[i]: # if unique element
             i+= 1
             nums[i] = nums[j] # move it to the correct position
-    del nums[i+ 1:]
+    del nums[i + 1:]
     return i + 1
 
 nums = [1,1,2,3,4,4,4,5]
