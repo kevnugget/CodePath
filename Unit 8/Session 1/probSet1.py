@@ -28,8 +28,7 @@ def check_tree2(root):
         return root.val == root.left.val
     elif root.right:
         return root.val == root.right.val
-    else:
-        return False
+    return False
     
 tree1 = TreeNode(10, TreeNode(10)) 
 tree2 = TreeNode(5, TreeNode(3), TreeNode(2)) 
